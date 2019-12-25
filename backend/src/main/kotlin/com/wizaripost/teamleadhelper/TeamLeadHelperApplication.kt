@@ -24,7 +24,5 @@ class TeamLeadHelperApplication{
 }
 
 fun main(args: Array<String>) {
-	println("Hello Ivan")
 	SpringApplication.run(TeamLeadHelperApplication::class.java, *args)
-	println("Hello Ivan")
 }
