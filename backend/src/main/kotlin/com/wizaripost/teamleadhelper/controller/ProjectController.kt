@@ -17,10 +17,10 @@ class ProjectController(val projectService: ProjectService) {
         return this.projectService.create(form)
     }
 
-//    @PostMapping("edit/{id}")
-//    fun update(@RequestBody dto: ProjectDTO) : ProjectDTO {
-//        return this.projectService.update(dto)
-//    }
+    @PostMapping("edit/{id}")
+    fun update(@RequestBody dto: ProjectDTO) : ProjectDTO {
+        return this.projectService.update(dto)
+    }
 
     @DeleteMapping("/{id}")
     fun delete(@PathVariable(name = "id") id1: Int): ProjectDTO {
